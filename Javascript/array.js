@@ -29,4 +29,22 @@ a = [1,2].concat(k && k)
 a
 
 
+/**
+ * for of
+ */
+
+let arr = ['a', 'b', 'c'];
+for (const what of arr) {
+  console.log('[JONGMAN_LOG] what', what, new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[1].slice(0, -1));
+}
+for (const [what] of arr) {
+  console.log('[JONGMAN_LOG] what', what, new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[1].slice(0, -1));
+}
+
+for (const [what, what2] of arr) {
+  console.log('[JONGMAN_LOG] what', what, new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[1].slice(0, -1));
+  console.log('[JONGMAN_LOG] what2', what2, new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().split('T')[1].slice(0, -1));
+}
+
+
 
