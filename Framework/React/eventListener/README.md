@@ -9,3 +9,7 @@ EventListener debugging logging
 
 
 TODO: console.log가 아닌 debug기능으로 디버깅해보기.
+
+
+16.8.0 버전의 stopPropagation은 잘 된다.
+https://codesandbox.io/s/react16-stoppropagation-sdxcn?file=/src/App.js
