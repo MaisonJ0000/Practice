@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-class BadRequestError extends Error();
+class BadRequestError extends Error {}
 
 app.listen(3000, () => {
   console.log('run');
