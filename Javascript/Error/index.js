@@ -4,13 +4,15 @@ const app = express();
 
 class BadRequestError extends Error {}
 
-app.listen(3000, () => {
+app.listen(8082, () => {
   console.log('run');
 })
 
-app.get('/', async (req, res, next) => {
-  await poolRequery(q);
-
+app.get('/', (req, res, next) => {
+  const e = new Error('hi');
+  e.has = '33'
+  throw e;
+  console.log('here2');
 
 });
 
